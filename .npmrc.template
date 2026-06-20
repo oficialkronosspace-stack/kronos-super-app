@@ -1,0 +1,6 @@
+//registry.npmjs.org/:_authToken=${NPM_TOKEN}
+
+# NOTE:
+# - Do NOT commit a real token into the repository.
+# - Create a secret named `NPM_TOKEN` in Cloudflare Pages (or in your CI) and ensure the build process can read it.
+# - Cloudflare Pages will substitute environment variables during build; if you need a temporary .npmrc at build time, write this file from the secret in the build command.
